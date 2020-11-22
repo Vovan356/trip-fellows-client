@@ -14,6 +14,7 @@ import com.tripfellows.authorization.util.MenuItemEnum
 
 
 
+
 class MainActivity : AppCompatActivity(), MainRouter {
     private lateinit var bottomNavigationView: BottomNavigationView
 
