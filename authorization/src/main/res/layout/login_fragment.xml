@@ -8,15 +8,23 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textSize="50sp"
         android:text="@string/app_name"/>
 
     <EditText
         android:id="@+id/auth_email"
         style="@style/AuthTextViewStyle"
+        android:layout_width="match_parent"
         android:hint="@string/email"
-        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         android:inputType="textEmailAddress"
         android:autofillHints="" />
 
@@ -24,20 +32,29 @@
         android:id="@+id/auth_password"
         style="@style/AuthTextViewStyle"
         android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:autofillHints=""
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="15dp"
         android:inputType="textPassword" />
 
     <TextView
         android:id="@+id/sing_up_link"
-        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp" />
+        android:textSize="17sp"
+        android:layout_marginBottom="10dp" />
 
     <Button
         android:id="@+id/login_btn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
-        android:text="@string/login_btn"/>
+        android:layout_marginLeft="150dp"
+
+        android:text="@string/login_btn" />
 </LinearLayout>
